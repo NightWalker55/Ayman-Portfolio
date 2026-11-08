@@ -81,7 +81,7 @@ export default function Research() {
       id="research"
       tone="white"
       title="Research"
-      intro="Five papers across healthcare AI, multimodal learning and Bangla NLP. Each entry says what the work found, in plain terms, and my role in it."
+      intro="Papers across healthcare AI, multimodal learning and NLP. Each paper describes what the work found, in plain terms, and my role in it."
     >
       <div className="space-y-2">
         {publications.map((paper) => (
