@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-feature-settings: "kern", "liga";
+}
+
+::selection {
+  background: #f4b860;
+  color: #0d1530;
+}
+
+/* Keyboard focus: indigo on paper, amber on the dark sections */
+:focus-visible {
+  outline: 2px solid #3345c9;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.on-night :focus-visible {
+  outline-color: #f4b860;
+}
+
+/* The hero and footer: a night sky with one distant lamp */
+.night-sky {
+  background:
+    radial-gradient(52rem 28rem at 88% -8%, rgba(244, 184, 96, 0.2), transparent 62%),
+    radial-gradient(44rem 30rem at -5% 105%, rgba(61, 82, 190, 0.32), transparent 62%),
+    #0d1530;
+}
+
+.lamp-glow {
+  animation: lamp-drift 16s ease-in-out infinite alternate;
+}
+
+@keyframes lamp-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.85;
+  }
+  to {
+    transform: translate3d(-4%, 5%, 0) scale(1.1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .lamp-glow {
+    animation: none;
+  }
+}
