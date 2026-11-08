@@ -12,21 +12,20 @@ export default function About() {
         </div>
 
         <div>
-          <h3 className="font-display text-2xl text-ink">Research interests</h3>
-          <dl className="mt-5 divide-y divide-line border-y border-line">
+          <h3 className="font-display text-2xl text-ink">
+            Research Interests
+          </h3>
+
+          <div className="mt-6 flex flex-wrap gap-3">
             {about.interests.map((interest) => (
-              <div
+              <span
                 key={interest.title}
-                className="grid gap-1 py-5 sm:grid-cols-[13rem_1fr] sm:gap-6"
+                className="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-white"
               >
-                <dt className="font-medium text-ink">{interest.title}</dt>
-                <dd className="leading-relaxed text-slate">{interest.text}</dd>
-              </div>
+                {interest.title}
+              </span>
             ))}
-          </dl>
-          <p className="mt-5 text-slate">
-            Also curious about: {about.alsoInterested}
-          </p>
+          </div>
         </div>
       </div>
     </Section>

@@ -37,7 +37,7 @@ export default function Hero() {
         <div>
           <motion.div
             variants={item}
-            className="relative h-24 w-24 overflow-hidden rounded-full ring-2 ring-lamp/70 ring-offset-4 ring-offset-night"
+            className="relative h-48 w-48 overflow-hidden rounded-full ring-2 ring-lamp/70 ring-offset-4 ring-offset-night"
           >
             <Image
               src="/images/port_image.jpeg"
@@ -48,15 +48,13 @@ export default function Hero() {
               className="object-cover"
               style={{
                 objectPosition: "50% 30%",
-                transform: "scale(2.1)",
+                transform: "scale(1.8)",
                 transformOrigin: "50% 30%",
               }}
             />
           </motion.div>
 
-          <motion.p variants={item} className="mt-6 text-haze">
-            {profile.role}, {profile.location}
-          </motion.p>
+         
 
           <motion.h1
             variants={item}
@@ -72,9 +70,7 @@ export default function Hero() {
             {profile.statement}
           </motion.p>
 
-          <motion.p variants={item} className="mt-5 max-w-xl leading-relaxed text-haze">
-            {profile.intro}
-          </motion.p>
+        
 
           <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-4">
             <a
@@ -104,7 +100,7 @@ export default function Hero() {
           className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm sm:p-8"
         >
           <h2 className="font-display text-2xl text-moon">
-            {publications.length} papers, 2024 to 2026
+            Research Highlights (2024 to 2026)
           </h2>
           <ol className="mt-5 divide-y divide-white/10">
             {publications.map((paper) => (

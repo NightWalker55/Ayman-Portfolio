@@ -6,7 +6,7 @@ export const profile = {
   role: "Machine learning researcher and lecturer",
   location: "Chattogram, Bangladesh",
   statement:
-    "I build machine learning models that keep working when data is incomplete, private, or in a language few tools support.",
+    "I am passionate to build machine learning models that makes our life easier and secure.",
   intro:
     "I teach computer science at Chittagong Independent University and research healthcare AI, multimodal learning and Bangla language processing. I am looking for research-focused MSc and PhD positions starting in 2027 in Canada, the USA and Europe.",
   email: "iktidar55@gmail.com",
@@ -14,27 +14,45 @@ export const profile = {
   links: {
     github: "https://github.com/NightWalker55",
     linkedin: "https://www.linkedin.com/in/ayman-iktidar-11b30b175/",
-    codeforces: "https://codeforces.com/profile/Ikti55",
-    scholar: "", // paste your Google Scholar URL here
+    scholar: "https://scholar.google.com/citations?user=D6bHRv4AAAAJ&hl=en", // paste your Google Scholar URL here
   },
 };
 
 export const about = {
   paragraphs: [
-    "I am a lecturer in the Department of Computer Science and Engineering at Chittagong Independent University. I graduated from CUET in 2024 and started teaching that September.",
-    "Most of my research asks how far a model can be shrunk, or how little data it can see, before it stops being useful. The answers matter in hospitals and clinics, and for languages like Bangla that get less attention from mainstream tools.",
+    "I am a lecturer in the Department of Computer Science and Engineering at Chittagong Independent University. I graduated from CUET in 2024 and started my career in academia in September the same year.",
   ],
   interests: [
+    {
+      title: "Natural Language Processing",
+      text: "Skin lesion classification, ICU mortality prediction, privacy-preserving training across hospitals.",
+    },
+    {
+      title: "Image Processing",
+      text: "Skin lesion classification, ICU mortality prediction, privacy-preserving training across hospitals.",
+    },
+    {
+      title: "Computer Vision",
+      text: "Skin lesion classification, ICU mortality prediction, privacy-preserving training across hospitals.",
+    },
+    {
+      title: "Multimodal Learning",
+      text: "Skin lesion classification, ICU mortality prediction, privacy-preserving training across hospitals.",
+    },
+    {
+      title: "XAI",
+      text: "Skin lesion classification, ICU mortality prediction, privacy-preserving training across hospitals.",
+    },
     {
       title: "Healthcare AI",
       text: "Skin lesion classification, ICU mortality prediction, privacy-preserving training across hospitals.",
     },
     {
-      title: "Language and vision",
+      title: "Cybersecurity",
       text: "Bangla NLP, multimodal learning, harmful content detection in code-mixed text and memes.",
     },
     {
-      title: "Efficient and explainable models",
+      title: "Bioinformatics",
       text: "Knowledge distillation, robustness to missing inputs, attribution analysis with Grad-CAM.",
     },
   ],
@@ -155,7 +173,7 @@ export const education = [
     org: "Chittagong University of Engineering and Technology",
     period: "Feb 2019 to Jun 2024",
     detail:
-      "CGPA 3.52 / 4.00. Coursework includes Data Structures, Algorithms, Operating Systems, Databases, Artificial Intelligence, Machine Learning, Software Engineering and Information Security.",
+      "CGPA 3.52 / 4.00",
   },
 ];
 
@@ -191,13 +209,6 @@ export const experience = [
 
 export const projects = [
   {
-    name: "This portfolio",
-    text: "The site you are reading. Next.js, Tailwind CSS and Framer Motion, with all content kept in one data file.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    code: "https://github.com/NightWalker55/Portfolio",
-    live: "https://ikti-portfolio.vercel.app",
-  },
-  {
     name: "Translaton",
     text: "Real-time translation app. It listens to speech, transcribes it and translates it into the language you choose, using the Google Cloud Speech API.",
     tech: ["Next.js", "Tailwind CSS", "Node.js", "Express.js"],
@@ -221,31 +232,21 @@ export const projects = [
   {
     name: "CS Monitor",
     text: "A blog website for computer science students.",
-    tech: [],
+    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js"],
     code: "",
     live: "",
   },
   {
     name: "Todo list",
     text: "An application to manage to-do lists.",
-    tech: [],
+    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js","MongoDB"],
     code: "",
     live: "",
   },
 ];
 
 export const skills = [
-  {
-    title: "Research methods",
-    items: [
-      "Knowledge distillation",
-      "Federated learning",
-      "Multimodal fusion",
-      "Transformer fine-tuning",
-      "Mixed-integer linear programming",
-      "Grad-CAM",
-    ],
-  },
+
   { title: "Languages", items: ["Python", "C++", "C", "JavaScript", "Go"] },
   { title: "ML frameworks", items: ["PyTorch", "TensorFlow"] },
   {
